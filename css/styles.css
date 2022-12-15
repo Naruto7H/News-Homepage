@@ -1,0 +1,164 @@
+body{
+  font-family: 'inter', sans-serif;
+  padding: 0 1.4%;
+  background-color: hsl(36, 100%, 99%);
+}
+a{
+  text-decoration: none;
+}
+p{
+  color:gray;
+  font-size: 1.5rem;
+}
+h3{
+  color:#fff;
+  font-size: 1.8rem;
+}
+hr{
+  background-color:gray;
+  height:2px;
+  border: none;
+}
+.navigation-bar{
+  display: flex;
+  align-items: center;
+  margin: 2% 0 1%;
+}
+.navbrand{
+    font-family: serif;
+    padding-left: 0.7rem;
+    font-size: 3.6rem;
+    font-family: 'Merriweather', serif;
+    color: black;
+    font-weight: bolder;
+}
+.brand{
+  color: black;
+  font-weight: bold;
+}
+.navigationlinks{
+  flex-grow: 0;
+}
+.navigation-list{
+  display: flex;
+  gap:3.3rem;
+  list-style: none;
+
+}
+.nav-item:hover{
+  color:hsl(5, 85%, 63%);
+}
+.navigation-list a{
+  font-size: 1.2rem;
+  color: gray;
+}
+.big-heading{
+  font-size: 4.5rem;
+  font-weight: 800;
+}
+.desktop-img{
+  max-width: 100%;
+}
+.title-text{
+  line-height: 1.5;
+  font-size: 1.8rem;
+
+}
+.more-button{
+  width:50%;
+  padding: 1rem 0;
+  background-color: hsl(5, 85%, 63%);
+  text-align: center;
+  font-size: 1.5rem;
+  color:#fff;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  white-space: nowrap;
+  min-width: 260px;
+  margin-top: 1.4em;
+}
+.more-button:hover{
+  background-color: hsl(240, 100%, 5%);
+}
+/* NEW SECTION */
+
+.new-block{
+  background-color: hsl(240, 100%, 5%);
+  display: flex;
+  flex-direction: column;
+  padding: 1.2em;
+  flex:1;
+  gap:1.2rem;
+  line-height: 1.5;
+  margin: 5rem 0;
+}
+.new-heading{
+  color:hsl(35, 77%, 62%);
+  font-size: 4.2rem;
+  margin: 0.5rem 0 0.8rem;
+}
+
+/* POPULAR ARTICLES */
+.popular-articles{
+  display: grid;
+  grid-auto-flow: row;
+  margin-bottom: 4%;
+  grid-row-gap: 1rem;
+}
+.popular-articles img{
+  height:14rem;}
+.articles{
+  display: flex;
+  flex:1;
+  gap:2.4em;
+
+}
+.article-text{
+  line-height: 1.6;
+}
+.article-text h1{
+  color: gray;
+  font-size: 3.4rem;
+}
+.article-text a{
+  font-weight: bold;
+  color:black;
+  font-size: 1.5rem;
+}
+.article-text a:hover{
+  color: hsl(5, 85%, 63%);
+}
+.article-text p{
+  font-size: 1.2rem;
+}
+/* FRONTEND MENTOR STYLES */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* MEDIA QUERY */
+
+@media (min-width:1280px){
+.popular-articles{
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1.8em;
+}
+.articles{
+  min-width: 405px;
+}
+.homepage{
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(3,1fr);
+  margin-bottom: 5%;
+}
+.homepage-image{
+  grid-column: span 2;
+}
+.new-block{
+  margin: 0;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+}
